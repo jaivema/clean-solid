@@ -1,3 +1,13 @@
+//FUNCIONES
+/*
+ - Simplicidad.
+ - Funciones de tamaño reducido.
+ - Funciones de una sola línea sin causar complejidad.
+ - Menos de 20 líneas de código. (Recomendado)
+ - Evitar el uso de "else". Debe ser estrictamente necesario.
+ - Priorizar el uso de la condición ternaria.
+*/
+
 (() => {
 
     // función para obtener información de una película por Id
