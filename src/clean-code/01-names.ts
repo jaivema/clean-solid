@@ -13,6 +13,18 @@
     // Archivos marcados para borrar - files to delete
     const arhivos = fs.map( f => f.f );
 
+
+    //correctamente
+    const evaluatedFiles =[
+        { id: 1, isEvaluated: false },
+        { id: 2, isEvaluated: false },
+        { id: 3, isEvaluated: true },
+        { id: 4, isEvaluated: false },
+        { id: 5, isEvaluated: false },
+        { id: 7, isEvaluated: true },
+    ]; 
+    const filesToDelete = evaluatedFiles.map( file => file.isEvaluated );
+
     // Malos nombres
     class AbstractUser { };
     class UserMixin { };
