@@ -46,4 +46,52 @@
     
     // cantidad máxima de clases por estudiante - max classes per student
     const maxStudents = 6;
+
+
+    //Arreglos - Arrays
+    //malo
+    const fruit= ['manzana','pera','naranja'];
+    //regular
+    const fruitList = ['manzana','pera','naranja'];
+    //bueno
+    const fruits = ['manzana','pera','naranja'];
+    //mejor - indica lo que se muestra. Nombres de frutas
+    const fruitNames = ['manzana','pera','naranja'];
+
+
+    //booleans
+    //malo - NO tienen sentido porque no corresponde con el tipo de dato
+    const active = true;
+    const wite = true;
+    const noValues = true;
+    const notEmpty = true;
+    //mejor - no se necesitan neuronas extras para pensar el código
+    const isEnable = true;
+    const canWite = true;
+    const hasValues = true;
+    const isEmpty = true;
+
+    //numeros
+    //malo - tengo que sentarme a leer el contexto del código para conocer el contenido.
+    // ¿es un total?¿es un minimo?¿es un maximo?¿es un promedio?
+    const a = 1;
+    const cars = 10;
+    const frutas = 3;
+    const payments = 20;
+    //mejor
+    const total = 1;
+    const minCars = 1;
+    const maxFruits = 20;
+    const averagePayments = 30.89;
+
+    // funciones - functions
+    // Deben represantar acciones que deben construirse con el verbo que representa la acción seguido de un sustantivo - deben descriptivos y a la vez concisos, que expresen lo que hacen específicamente pero abstenerse de los detalles de implementación.
+    //malos
+    function createUserIfNotExists():void{};
+    function updateUserIfNotEmpy():void{};
+    function functionsendEmailIfFieldValid(){};
+    //bueno
+    function createUser():void{};
+    function updateUser():void{};
+    function sendEmail():void{};
 })();
