@@ -1,21 +1,23 @@
-type Gender = 'M' | 'F';
+(()=>{
+    //a
 
-// por defecto , si no se declara la propiedad de acceso, se accede directamente a ellos y es de carácter public
-
-class Person1 {
-    //     <atributos> - <tipos o tipados>
-    private name: string;
-    public gender: Gender;
-    public birthdate: Date;
-
-    // El constructor es un método especial que se ejecuta cuando se crea una instancia de la clase. Su función es asignar los valores de los parámetros a las atributos de la clase.
-                //<-----------------parámetros--------------->
-    constructor(name: string, gender: Gender, birthdate: Date){
+    type Gender = 'M' | 'F';
+    
+    // por defecto , si no se declara la propiedad de acceso, se accede directamente a ellos y es de carácter public
+    class Person1 {
+        //     <atributos> - <tipos o tipados>
+        private name: string;
+        public gender: Gender;
+        public birthdate: Date;
+        
+        // El constructor es un método especial que se ejecuta cuando se crea una instancia de la clase. Su función es asignar los valores de los parámetros a las atributos de la clase.
+        //<-----------------parámetros--------------->
+        constructor(name: string, gender: Gender, birthdate: Date){
         this.name = name;
         this.gender = gender;
         this.birthdate = birthdate;
     }
-
+    
     // Una propiedad es una forma controlada de acceder a los atributos de una clase, generalmente utilizando métodos get y set ('getName' y 'setName').
     // Propiedad 'getName' para el atributo 'name'.
     get getName(): string {
@@ -44,8 +46,7 @@ const newPerson2 = new Person2('Jaime V.', 'M', new Date('1979-02-09'));
 console.log({ newPerson1 });
 console.log({ newPerson2 });
 
-
-// PRINCIPIO DE RESPONSABILIDAD ÚNICA //////////////////////////////////////
+//b
 // En herencia de clases es complicado de manejar
 
 class Person {
@@ -73,7 +74,7 @@ class User extends Person {
         super(name, gender, birthdate);
         this.lastAccess = new Date();
     }
-
+    
     //método para comprobar las credenciales en User
     checkCredentials() {
         return true;
@@ -99,3 +100,4 @@ console.log({userSettings});
 
 // El método checkCredentials se hereda de User y toString se heredan de Person.
 console.log(userSettings.checkCredentials(), userSettings.toString());
+})
