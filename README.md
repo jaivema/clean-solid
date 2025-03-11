@@ -16,3 +16,6 @@ yarn dev
 ó
 npm run dev
 ```
+
+---
+NOTA: importar el archivo que deseas trabajar el main.ts
