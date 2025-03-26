@@ -1,4 +1,5 @@
 # Proyecto para practicar
+[Wiki](https://github.com/jaivema/clean-solid/wiki)
 
 Este es un proyecto de Vanilla TypeScript en Vite, para trabajar los ejercicios del curso sobre Principios SOLID y CleanCode.
 
@@ -10,7 +11,7 @@ yarn install
 npm install
 ```
 
-Para ejecutar el proyecto, simplemente ejecuten
+Para ejecutar el proyecto, simplemente ejecuta
 ```
 yarn dev
 ó
